@@ -1,0 +1,384 @@
+/*-----------------------------------------------------------------------------
+
+PPBD - Pesantren Imam Syafi'i
+
+date 		:    23/01/2018 - DD/MM/YYYY
+description	:	 Penerimaan Siswa Baru Online
+author		:    Muhammad Zuhri
+website		:    http://www.zuhri.net
+email		:	 muhammadzhuhry@gmail.com
+
+-----------------------------------------------------------------------------*/
+
+/*===================================
+			  Basic Style
+===================================*/
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Raleway', sans-serif;
+}
+
+ol, ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: all 500ms ease-in-out;
+	-moz-transition: all 500ms ease-in-out;
+	-ms-transition: all 500ms ease-in-out;
+	-o-transition: all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+a, a:focus, a:hover {
+	text-decoration: none;
+	outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*===================================
+			Margin & Padding
+===================================*/
+
+.padding-top-0  { padding-top: 0px !important;  }
+.padding-top-10 { padding-top: 10px !important; }
+.padding-top-20 { padding-top: 20px !important; }
+.padding-top-30 { padding-top: 30px !important; }
+.padding-top-50 { padding-top: 50px !important; }
+.padding-top-80 { padding-top: 80px !important; }
+
+.padding-bottom-0  { padding-bottom: 0px !important;  }
+.padding-bottom-10 { padding-bottom: 10px !important; }
+.padding-bottom-20 { padding-bottom: 20px !important; }
+.padding-bottom-30 { padding-bottom: 30px !important; }
+.padding-bottom-50 { padding-bottom: 50px !important; }
+.padding-bottom-80 { padding-bottom: 80px !important; }
+
+.margin-top-0   { margin-top: 0px !important;  }
+.margin-top-10  { margin-top: 10px !important; }
+.margin-top-20  { margin-top: 20px !important; }
+.margin-top-30  { margin-top: 30px !important; }
+.margin-top-50  { margin-top: 50px !important; }
+.margin-top-80  { margin-top: 80px !important; }
+.margin-top-100 { margin-top: 100px !important; }
+
+.margin-bottom-0   { margin-bottom: 0px !important;  }
+.margin-bottom-10  { margin-bottom: 10px !important; }
+.margin-bottom-20  { margin-bottom: 20px !important; }
+.margin-bottom-30  { margin-bottom: 30px !important; }
+.margin-bottom-50  { margin-bottom: 50px !important; }
+.margin-bottom-80  { margin-bottom: 80px !important; }
+.margin-bottom-100 { margin-bottom: 100px !important; }
+
+/*===================================
+				Navbar
+===================================*/
+
+.navbar {
+	border: 0;
+	margin-bottom: 0;
+	font-family: 'Lato', sans-serif;
+	border-bottom: 3px solid #ffa500 !important; /*second-colour*/
+	font-size: 12px;
+	letter-spacing: 1px;
+	background-color: #1e5474; /*base-colour*/
+}
+
+.navbar-brand {
+  	padding: 0px;
+}
+
+.navbar-brand > img {
+  	height: 100%;
+  	padding: 3px;
+  	width: auto;
+}
+
+.navbar a {
+	color: #e0e0e0 !important;
+	opacity: 1;
+	border-bottom: 2px solid transparent !important;
+}
+
+.navbar a:hover {
+	opacity: 1;
+	color:  #ffa500 !important; /*second-colour*/
+}
+
+/*.navbar-nav li .dropdown-menu { 
+	background-color: #080808;
+	color: #ffffff;
+	font-size: 12px;
+}*/
+
+.dropdown-menu li a {
+    color: #333333 !important;
+    font-size: 12px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: transparent;
+}
+
+.navbar-nav li.active a {
+   	 color:  #ffa500 !important;
+   	 border: none;
+   	 background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+	.navbar-brand {
+	  	margin-left: 10px;
+	}
+
+	.dropdown-menu li a {
+	    color: #e0e0e0 !important;
+	}
+}
+
+
+/*===================================
+			   GREETING
+===================================*/
+
+.greeting h2 {
+	letter-spacing: 3px;
+}
+
+.greeting p {
+	font-size: 18px;
+}
+
+/*===================================
+			   SUCCESS
+===================================*/
+
+.success h2 {
+	letter-spacing: 3px;
+}
+
+.success p {
+	font-size: 18px;
+}
+
+/*===================================
+			   TABLE-PESERTA
+===================================*/
+
+.table-peserta {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/*===================================
+			   TABLE-JADWAL
+===================================*/
+
+.table-jadwal {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/*===================================
+			   PROSEDUR
+===================================*/
+
+.prosedur p {
+	font-size: 16px;
+	padding-bottom: 10px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/*===================================
+			   BANTUAN
+===================================*/
+
+.bantuan .img-qr {
+	height: 250px;
+	width: 255px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+
+.bantuan .img-nomor {
+	margin-top: 100px;
+	height: 60px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	vertical-align: middle;
+}
+
+
+/*===================================
+			FORM-PENDAFTARAN
+===================================*/
+
+.form-pendaftaran {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.form-pendaftaran .form-group {
+	padding: 20px 20px;
+}
+
+.form-pendaftaran .form-control {
+	border-radius: 0 !important;
+}
+
+.form-pendaftaran .btn-daftar {
+	border-radius: 0 !important;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+/*===================================
+			LOGIN-PESERTA
+===================================*/
+
+.login {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.card-container.card {
+    max-width: 350px;
+    padding: 40px 40px;
+}
+
+.card {
+    background-color: #F7F7F7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-card {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 10px;
+    display: block;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.profile-name-card {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0 0;
+    min-height: 1em;
+}
+
+.btn.btn-signin {
+    background-color: #1e5474; /*base-colour*/
+    font-size: 14px;
+    height: 36px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 0px;
+    border: none;
+    -o-transition: all 0.218s;
+    -moz-transition: all 0.218s;
+    -webkit-transition: all 0.218s;
+    transition: all 0.218s;
+}
+
+.btn.btn-signin:hover,
+.btn.btn-signin:active,
+.btn.btn-signin:focus {
+    background-color: #ffa500; /*second-colour*/
+}
+
+
+/*===================================
+			   FOOTER
+===================================*/
+
+.footer {
+	text-align: left;
+	color: #ffffff;
+	background-color: #1e5474; /*base-colour*/
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.footer h4 {
+	letter-spacing: 3px;
+	margin: 20px 0 15px;
+}
+
+.footer p {
+	font-size: 15px;
+	letter-spacing: 1px;
+	padding-bottom: 5px;
+}
+
+.footer .social i {
+	height: 30px;
+	width: 30px;
+	margin-right: 10px;
+	font-size: 15px;
+   	color: #ffffff;
+   	transition: .2s;
+   	padding: 7px 8px;
+	border-radius: 50%;
+	background-color: #ffa500; /*second-colour*/
+}
+
+.footer .social .fa:hover {
+   	color: #ffa500; /*second-colour*/
+   	background-color: #ffffff;
+}
+
+.footer .profile i {
+	color: #ffa500; /*second-colour*/
+	font-size: 15px;
+	padding-right: 5px;
+}
+
+.footer .profile a {
+	color: #ffffff;
+}
+
+.footer hr {
+	border: 1px solid #ffa500; /*second-colour*/
+	margin-bottom: 0px;
+}
+
+.footer .copyright p {
+	color: #999999;
+	font-size: 15px;
+    letter-spacing: 3px;
+    margin: 10px 0 10px;
+}
+
+.footer .login-admin a {
+	color: #1e5474; /*base-colour*/
+}
+
+.footer .login-admin a:hover {
+	color: #1e5474; /*base-colour*/
+}

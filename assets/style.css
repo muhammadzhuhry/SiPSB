@@ -1,0 +1,38 @@
+/*===========================
+        Custom Code
+============================*/
+/*hr-style*/
+.hr-style {
+  background-color: transparent;
+  border-top: 2px dashed #000000; /*base-colour*/
+  width: 100%;
+}
+
+.thumbnail .img-rekening {
+	width: 200px;
+	height: 100px;
+
+}
+
+.modal-rekening {
+	padding: 50px 0 50px;
+}
+
+.modal-rekening .modal-header {
+   	 background-color: #080808;
+   	 text-align: center;
+}
+
+.modal-rekening .text-modal-header {
+	color: #ffffff;
+	font-size: 17px;
+	letter-spacing: 1px;
+}
+
+.modal-rekening .close {
+	color: #ffffff;
+}
+
+.form-tengah {
+	margin: 0 auto;
+}
