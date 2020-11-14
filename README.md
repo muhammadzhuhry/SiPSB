@@ -1,4 +1,6 @@
 # SiPSB
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)&nbsp;
+![HitCount](http://hits.dwyl.com/muhammadzhuhry/belajar-golang-dasar.svg)&nbsp;
 
 **SiPSB** is an system information for new student registration that can be used by school or other to help new student register theirself. This system was created by CodeIgniter 3.1.7
 
